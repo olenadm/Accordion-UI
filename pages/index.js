@@ -28,10 +28,10 @@ export default function Home(props) {
       <div className="col-sm-6">
         <Image
           src={image}
-          alt=""
+          alt={title}
           width={650}
           height={570}
-          className="img-fluid main-img"
+          className="img-fluid main-img d-none d-md-block"
           priority={true}
         />
       </div>
@@ -39,7 +39,7 @@ export default function Home(props) {
         <div className="float-lg-end accordion-wrapper">
           <div>
             <span>{tag}</span>
-            <h1 className="lh-1 mt-3 mb-4">{title}</h1>
+            <h1 className="title mt-3 mb-4">{title}</h1>
           </div>
           <AccordionList items={challenges.items} onToggle={handleToggle} />
         </div>

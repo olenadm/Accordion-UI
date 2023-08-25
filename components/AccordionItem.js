@@ -31,7 +31,7 @@ export default function AccordionItem(props) {
         aria-labelledby={`heading${id}`}
         data-bs-parent="#accordionExample"
       >
-        <div className="accordion-body pb-4 pt-0 pe-lg-4 text-center">
+        <div className="accordion-body pb-4 pt-0 pe-lg-4 text-center acc">
           <Image
             src={image}
             alt=""
